@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 60px;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 5px solid #830606;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    margin-left: 150px;
+    font-size: 40px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin-right: 150px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+}
+
+.color {
+    background-color: rgb(134, 23, 23);
+    padding: 30px 20px;
+}
+
+.cover {
+    background-image: url(goku-2020-coming-um-2160x3840.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.cover p {
+    max-width: 80%;
+    margin: auto;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.cover form {
+    padding-top: 30px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #863617;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 60px;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-top: 5px solid #861717;
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+section,
+#i {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*----------------------- search -----------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00000094;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    background-color: rgba(250, 239, 239, 0.616);
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.search {
+    float: left;
+    background: none;
+    border: none;
+    line-height: 40px;
+    padding: 0;
+    font-size: 14pt;
+    transition: .5s;
+    width: 0px;
+}
+
+.btn {
+    float: right;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #850404b6;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 8px;
+    width: 100%;
+}
+
+.box:hover>.search {
+    width: 300px;
+    width: 100%;
+}
+
+.box:hover>.btn {
+    color: #fff;
+    background-color: #000;
+}

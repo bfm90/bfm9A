@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>webpage Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(gon-freecss-from-hunter-1f.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+        .navbar {
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+            display: flex;
+            column-gap: 5rem;
+        }
+
+        .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .Logo {
+            color: #d37c35;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: right;
+            padding-top: 10px;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(139, 63, 63);
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #f30707;
+        }
+
+        .search {
+            width: 330px;
+            float: left;
+            margin-left: 110px;
+            right: auto;
+        }
+
+        .srch {
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #ff0000;
+            margin-top: 13px;
+            color: #fff;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            background: #ff0000d8;
+            border: 2px solid #ff7300c0;
+            margin-top: 13px;
+            color: rgb(236, 24, 24);
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .srch:focus {
+            outline: none;
+        }
+
+        .content {
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #c9c9c9;
+            position: relative;
+        }
+
+        .content .par {
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-right: 20px;
+            letter-spacing: 2px;
+        }
+
+        .content .cn {
+            width: 160px;
+            height: 40px;
+            background: #f00404ab;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+
+        .content .cn a {
+            text-decoration: none;
+            color: rgb(39, 150, 144);
+            transition: .3s ease;
+        }
+
+        .cn:hover {
+            background-color: rgb(255, 9, 9);
+        }
+
+        .content span {
+            color: #f13a0ce7;
+            font-size: 60px;
+        }
+
+        .form {
+            width: 250px;
+            height: 330px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+            position: absolute;
+            top: -0px;
+            left: 870px;
+            border-radius: 1px;
+            padding: 27px;
+            margin: auto;
+        }
+
+        .form h2 {
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ffffffc2;
+            font-size: 22px;
+            background-color: #00000093;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input {
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #25d8d8;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: rgb(233, 12, 12);
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #42c229;
+            font-family: Arial;
+        }
+
+        .btnn {
+            width: 240px;
+            height: 40px;
+            background: #19c5b7;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #19acf0;
+            transition: 0.4s ease;
+        }
+
+        .btnn:hover {
+            background: rgb(221, 27, 27);
+            color: #ca2020;
+        }
+
+        .btnn a {
+            text-decoration: none;
+            color: #1db6b6;
+            font-weight: bold;
+        }
+
+        .form .link {
+            font-family: Arial;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .form .link a {
+            text-decoration: none;
+            color: #af141c;
+        }
+
+        .liw {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .icons {
+            text-decoration: none;
+            color: #1cb429;
+        }
+
+        .icons ion-icon {
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #3700ffa2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="Logo">Bayen<span>Farhan</span></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="https://www.w3schools.com/">ABOUT</a></li>
+                    <li><a href="https://code.visualstudio.com/">SERVICE</a></li>
+                    <li><a href="https://www.sitepoint.com/a-basic-html5-template/">DESIGN</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DPnqb74Smug">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href="http://google.com"><button class="btn">search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>web Design & <br><span>Development</span> <br>Course</h1>
+            <p class="par">Many different habitats can be considered extreme environments,<br> such as the polar ice
+                caps, the driest spots in deserts, <br> and abysmal depths in the ocean. <br>Many different places on
+                the <br> Earth demand that species become highly specialized if they are to survive.<br> In
+                particular, microscopic organisms that can't be seen with the naked eye often <br> thrive in surprising
+                places.
+            </p>
+
+            <button class="cn"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default">JOIN
+                    US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password  Here">
+                <button class="btnn"><a href="home.html">Login</a></button>
+
+                <p class="link">Don't have an account<br>
+                    <a href="php.html">Sign up </a> here</a>
+                </p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="">
+                        <ion-icons name="logo-facebook"></ion-icons>
+                    </a>
+                    <a href="">
+                        <ion-icons name="logo-instagram"></ion-icons>
+                    </a>
+                    <a href="">
+                        <ion-icons name="logo-twitter"></ion-icons>
+                    </a>
+                    <a href="">
+                        <ion-icons name="logo-google"></ion-icons>
+                    </a>
+                    <a href="">
+                        <ion-icons name="logo-skype"></ion-icons>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="ionicons.js"></script>
+</body>
+
+</html>
